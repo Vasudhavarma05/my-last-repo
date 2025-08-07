@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Lifecycle Diagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    svg {
+      margin: 30px auto;
+      display: block;
+    }
+    .stage {
+      fill: #3498db;
+      stroke: #2c3e50;
+      stroke-width: 2px;
+    }
+    .label {
+      font-size: 14px;
+      fill: #fff;
+      font-weight: bold;
+    }
+    .description {
+      max-width: 800px;
+      margin: 10px auto 30px;
+      text-align: left;
+      padding: 10px;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>DevOps Lifecycle</h1>
+
+  <!-- DevOps Lifecycle SVG -->
+  <svg width="600" height="600" viewBox="0 0 600 600">
+    <circle cx="300" cy="300" r="200" fill="none" stroke="#bdc3c7" stroke-width="3"/>
+    <!-- Stages -->
+    <g>
+      <circle class="stage" cx="300" cy="100" r="40"/>
+      <text class="label" x="300" y="105" text-anchor="middle">Plan</text>
+
+      <circle class="stage" cx="430" cy="170" r="40"/>
+      <text class="label" x="430" y="175" text-anchor="middle">Develop</text>
+
+      <circle class="stage" cx="500" cy="300" r="40"/>
+      <text class="label" x="500" y="305" text-anchor="middle">Build</text>
+
+      <circle class="stage" cx="430" cy="430" r="40"/>
+      <text class="label" x="430" y="435" text-anchor="middle">Test</text>
+
+      <circle class="stage" cx="300" cy="500" r="40"/>
+      <text class="label" x="300" y="505" text-anchor="middle">Release</text>
+
+      <circle class="stage" cx="170" cy="430" r="40"/>
+      <text class="label" x="170" y="435" text-anchor="middle">Deploy</text>
+
+      <circle class="stage" cx="100" cy="300" r="40"/>
+      <text class="label" x="100" y="305" text-anchor="middle">Operate</text>
+
+      <circle class="stage" cx="170" cy="170" r="40"/>
+      <text class="label" x="170" y="175" text-anchor="middle">Monitor</text>
+    </g>
+  </svg>
+
+  <!-- Descriptions -->
+  <div class="description"><strong>Plan:</strong> Define project requirements, set goals, and outline tasks collaboratively between dev and ops teams.</div>
+  <div class="description"><strong>Develop:</strong> Code is written using version control systems and collaboration tools to ensure agility and traceability.</div>
+  <div class="description"><strong>Build:</strong> Code is compiled and built automatically using CI/CD pipelines to ensure consistency and speed.</div>
+  <div class="description"><strong>Test:</strong> Automated and manual tests are run to catch bugs, ensure quality, and validate functionality early.</div>
+  <div class="description"><strong>Release:</strong> Verified builds are prepared for release and tagged as production-ready artifacts.</div>
+  <div class="description"><strong>Deploy:</strong> Application is deployed to staging or production environments with automated scripts or container platforms.</div>
+  <div class="description"><strong>Operate:</strong> Teams manage and maintain infrastructure, systems, and services to keep the app running smoothly.</div>
+  <div class="description"><strong>Monitor:</strong> Logs and metrics are collected and analyzed to detect issues and improve performance and reliability.</div>
+
+</body>
+</html>
